@@ -24,11 +24,6 @@ const LeftSide = () => {
             return () => clearInterval(interval);
         }
     }, [isSuccess, data]);
-    useEffect(() => {
-        console.log('suc', isSuccess)
-        console.log('fet', isFetching)
-        console.log('load', isLoading)
-    })
 
     return (
         isSuccess && (!isFetching && !isLoading) ? <div className={styles.LeftSide}>
