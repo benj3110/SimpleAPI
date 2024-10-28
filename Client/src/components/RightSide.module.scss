@@ -1,0 +1,29 @@
+.RightSide{
+    min-width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+    height: calc(100vh - 8rem);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.Title{
+    margin-block-end: 0;
+    margin-top: 3rem;
+}
+
+.RightSide::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.RightSide::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.RightSide::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker on hover */
+}
